@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-typescript-eslint-prettier-starter",
+  "name": "herriman.net",
   "private": true,
-  "description": "A starter to get up and running developing type-safe and style-safe Gatsby",
+  "description": "Herriman & Associates, Inc. Website",
   "version": "0.1.0",
-  "author": "Maarten Tielemans <ttielu@gmail.com>",
+  "author": "Matt Schultz <mattschultz11@gmail.com>",
   "dependencies": {
     "gatsby": "2.30.3",
     "gatsby-image": "2.9.0",
@@ -31,30 +31,29 @@
     "eslint-plugin-react": "7.22.0",
     "eslint-plugin-react-hooks": "4.2.0",
     "gatsby-plugin-ts": "2.7.1",
+    "gh-pages": "^3.1.0",
     "prettier": "2.2.1",
     "typescript": "4.1.3"
   },
-  "keywords": [
-    "eslint",
-    "gatsby",
-    "prettier",
-    "typescript"
-  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint --fix . --ext .js,.jsx,.ts,.tsx",
+    "prettier": "prettier --check 'src/**/*.{js,jsx,ts,tsx}'",
+    "prettier:fix": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "serve": "gatsby serve",
     "start": "npm run develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Tielem/gatsby-typescript-eslint-prettier-starter"
+    "url": "https://github.com/mattschultz11/herriman.net"
   },
   "bugs": {
-    "url": "https://github.com/Tielem/gatsby-typescript-eslint-prettier-starter/issues"
+    "url": "https://github.com/mattschultz11/herriman.net/issues"
   }
 }

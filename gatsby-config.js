@@ -1,8 +1,9 @@
 module.exports = {
+    pathPrefix: `/herriman.net`,
     siteMetadata: {
-        title: `Gatsby TypeScript + ESlint + Prettier Starter`,
-        description: `This Gatsby starter is an adaptation of the default Gatsby starter with TypeScript, ESlint and Prettier pre-configured, bringing you everything you need to get up and running with Gatsby in a type-safe and style-safe way.`,
-        author: `@Tielem <ttielu@gmail.com>`,
+        title: `Herriman & Associates, Inc.`,
+        description: ``,
+        author: `Matt Schultz <mattschultz11@gmail.com>`,
     },
     plugins: [
         {
@@ -22,7 +23,7 @@ module.exports = {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `images`,
-                path: `${__dirname}/src/images`,
+                path: `${__dirname}/src/assets/images`,
             },
         },
         `gatsby-transformer-sharp`,
@@ -30,17 +31,15 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `gatsby-starter-default`,
-                short_name: `starter`,
+                name: `Herriman & Associates, Inc.`,
+                short_name: `Herriman & Associates`,
                 start_url: `/`,
-                background_color: `#663399`,
-                theme_color: `#663399`,
+                background_color: `#FFFFFF`,
+                theme_color: `#221F1F`,
                 display: `minimal-ui`,
-                icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+                icon: `src/assets/images/gatsby-icon.png`,
             },
         },
-        // this (optional) plugin enables Progressive Web App + Offline functionality
-        // To learn more, visit: https://gatsby.dev/offline
         // `gatsby-plugin-offline`,
     ],
 };
